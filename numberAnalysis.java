@@ -4,8 +4,8 @@ public class numberAnalysis {
    public static void main(String[]arg) {
        Scanner sc = new Scanner(System.in);
        System.out.println("How many time you want to analysis the number?");
-       int times = sc.nextInt();;
-       for (int i = 0; i <= times;i++) {
+       int times = sc.nextInt();
+       for (int i = 0; i < times;i++) {
            System.out.println("Enter the numbers!!!");
            int number = sc.nextInt();
            if (number % 2 == 0) {
