@@ -60,6 +60,7 @@ public class numberAnalysis {
        System.out.println("Total Zero count " + zeroCount);
        System.out.println("The max number is " + max);
        System.out.println("The mini number is " + mini);
+       System.out.println("today task to get the binary version of the max and mini number and using the arry on it ");
         sc.close();
    }
 }
