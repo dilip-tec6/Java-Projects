@@ -10,9 +10,22 @@ public class numberAnalysis {
        int negativeCount = 0;
        int positiveCount = 0;
        int zeroCount = 0;
-       for (int i = 0; i < times;i++) {
-           System.out.println("Enter the numbers!!!");
-           int number = sc.nextInt();
+
+       // Read the first number.
+       System.out.println("Enter number 1");
+       int number = sc.nextInt();
+       int max = number;
+       int mini = number;
+       
+       // counter for the first number
+            if (number % 2 == 0) evenCount++; else oddCount++;
+            if (number > 0) positiveCount++;
+            else if (number < 0) negativeCount++;
+            else zeroCount++;
+            
+       for (int i = 1; i < times;i++) {
+           System.out.println("Enter the numbers!!!" + (i+1) + ":" );
+            number = sc.nextInt();
            if (number % 2 == 0) {
                evenCount++;
                System.out.println("Its 'Even' number");
@@ -35,13 +48,18 @@ public class numberAnalysis {
                zeroCount++;
                System.out.println("Number is 'Zero'");
            }
+            
+           if (number > max) max = number;
+           if (number< mini) mini  = number; 
+         }
 
-       }
        System.out.println("Total Even count " + evenCount);
        System.out.println("Total Odd count " +oddCount );
        System.out.println("Total Negative count " +negativeCount);
        System.out.println("Total Positive count " + positiveCount);
        System.out.println("Total Zero count " + zeroCount);
+       System.out.println("The max number is " + max);
+       System.out.println("The mini number is " + mini);
         sc.close();
    }
 }
