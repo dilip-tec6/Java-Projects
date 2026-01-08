@@ -25,7 +25,16 @@ public class arrayProject {
           if(x[i]%2==0)even++;
           else odd++;
       }
-      
+        System.out.println("nArray elements");
+      for(int i = 0 ;i<x.length;i++){
+          System.out.println(x[i] + " ");
+      }
+        System.out.println("Total Positive" + positive);
+        System.out.println("Total Negative" + negative);
+        System.out.println("Total Zero " + zero);
+        System.out.println("Total Even" + even);
+        System.out.println("Total Odd " + odd );
+
         sc.close();
     }
 }
