@@ -1,7 +1,7 @@
 package Java_Projects;
 import java.util.Scanner;
 public class arrayProject {
-    public static void main(String []arg) {
+    public static void main(String [] args) {
       Scanner sc = new Scanner(System.in);
 
       // ask for the size
@@ -14,8 +14,8 @@ public class arrayProject {
       //counters
         int positive = 0 , negative = 0, zero = 0;
         int even = 0, odd= 0;
-      for(int i = 1 ; i<= x.length;i++){
-          System.out.println("Enter number" + (i+1)+ ":");
+      for(int i=0 ; i < x.length;i++){
+          System.out.print("Enter number" + (i + 1)+ ": ");
           x[i]=sc.nextInt();
 
           if (x[i]>0)positive++;
@@ -25,8 +25,8 @@ public class arrayProject {
           if(x[i]%2==0)even++;
           else odd++;
       }
-        System.out.println("nArray elements");
-      for(int i = 0 ;i<x.length;i++){
+        System.out.println("\nArray elements");
+      for(int i = 0; i<x.length; i++){
           System.out.println(x[i] + " ");
       }
         System.out.println("Total Positive" + positive);
